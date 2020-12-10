@@ -25,7 +25,7 @@ var users = [{ id: 1, login: "Ania", password: "ania", wiek: 10, uczen: "tak", p
 { id: 4, login: "Franek", password: "franek", wiek: 19, uczen: "nie", plec: "M" },
 { id: 4, login: "Grażyna", password: "grażyna", wiek: 20, uczen: "nie", plec: "K" }]
 
-var side = "<style>body {margin: 0px;padding: 0px;background-color: #212121;color: white;} table {margin-top: 10px; margin-left: 10px;border: 5px solid lightgrey;border-collapse: collapse;width: 80%;padding-left: 20px;font-size: 30px;}td{border-collapse: collapse; border: 5px solid lightgrey;}  #naglowek2 {height: 45px; width: 100%; background-color: #ffe334; padding-top: 15px;margin-bottom:10px;} a {color: white;font-size: 25px;padding: 5px;}</style></div><div id='naglowek2'><a href='http://localhost:3000/sort'>Sort</a><a href='http://localhost:3000/gender'>Gender</a><a href='http://localhost:3000/show'>Show</a><a href='http://localhost:3000/admin'>Admin</a></div></body>"
+var side = "<style>body {margin: 0px;padding: 0px;background-color: #212121;color: white;} table {margin-top: 10px; margin-left: 10px;border: 5px solid lightgrey;border-collapse: collapse;width: 80%;padding-left: 20px;font-size: 30px;}td{border-collapse: collapse; border: 5px solid lightgrey;}  #naglowek2 {height: 45px; width: 100%; background-color: #ffe334; padding-top: 15px;margin-bottom:10px;} a {color: white;font-size: 25px;padding: 5px;}</style></div><div id='naglowek2'><a href='https://weronikakrawczyk3ic2.herokuapp.com/sort'>Sort</a><a href='https://weronikakrawczyk3ic2.herokuapp.com/gender'>Gender</a><a href='https://weronikakrawczyk3ic2.herokuapp.com/show'>Show</a><a href='https://weronikakrawczyk3ic2.herokuapp.com/admin'>Admin</a></div></body>"
 
 var zalogowani = []
 
