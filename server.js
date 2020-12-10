@@ -11,10 +11,6 @@ app.listen(PORT, function () {
     console.log("start serwera na porcie " + PORT)
 })
 
-// var express = require("express")
-// var app = express()
-// const PORT = 3000;
-
 var path = require("path")
 
 var users = [{ id: 1, login: "Ania", password: "ania", wiek: 10, uczen: "tak", plec: "K" },
@@ -113,7 +109,6 @@ app.get("/sort", function (req, res) {
         sort_Page = "<form action=\"/sortowanie\" method=\"GET\">"
         if (sort == true) {
             sort_Page += "<input type=\"radio\" value=\"rosnaco\" name=\"value\" onchange=\"this.form.submit()\"checked> rosnaco <input type=\"radio\" value=\"malejaco\" name=\"value\"onchange=\"this.form.submit()\"> malejaco </form><table>"
-            //sort_Page += "<table>"
             users.sort(function (a, b) { return a.wiek - b.wiek; });
             for (i = 0; i < users.length; i++) {
                 wiersz = "<tr><td>" + "Id: " + users[i].id + "</td>" + "<td>" + "User: " + users[i].login + " - " + users[i].password + "</td>" + "<td>" + "Wiek: " + users[i].wiek + "</td>" + "</tr>"
@@ -130,11 +125,6 @@ app.get("/sort", function (req, res) {
                 sort_Page += wiersz
             }
         }
-        // tabela = "<table>"
-        // for (i = 0; i < users.length; i++) {
-        //     wiersz = "<tr><td>" + "Id: " + users[i].id + "</td>" + "<td>" + "User: " + users[i].login + " - " + users[i].password + "</td>" + "<td>" + "Wiek: " + users[i].wiek + "</td>" + "</tr>"
-        //     sort += wiersz
-        // }
         res.send(side + sort_Page + "</table>")
     }
 })
@@ -195,10 +185,3 @@ app.get("/show", function (req, res) {
     }
 })
 
-//nasłuch na określonym porcie
-
-// app.use(express.static('static'))
-
-// app.listen(PORT, function () {
-//     console.log("start serwera na porcie " + PORT)
-// })
