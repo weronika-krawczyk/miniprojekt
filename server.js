@@ -7,9 +7,9 @@ var PORT = process.env.PORT || 3000; // bardzo istotna linijka - port zostaje pr
 //     res.send("<h1>first app on heroku!</h1>")
 // })
 
-// app.listen(PORT, function () {
-//     console.log("start serwera na porcie " + PORT)
-// })
+app.listen(PORT, function () {
+    console.log("start serwera na porcie " + PORT)
+})
 
 // var express = require("express")
 // var app = express()
